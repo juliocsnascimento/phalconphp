@@ -46,7 +46,6 @@ RUN git clone --depth=1 "git://github.com/phalcon/cphalcon.git"
 WORKDIR /tmp/cphalcon/build
 RUN ./install
 
-
 #INSTALL APCU
 ARG APCU_VERSION=5.1.18
 RUN pecl install apcu-${APCU_VERSION} && docker-php-ext-enable apcu
